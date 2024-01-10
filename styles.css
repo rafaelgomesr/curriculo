@@ -1,5 +1,5 @@
 body {
-  width: 80%;
+  width: 100%;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -13,11 +13,15 @@ header {
 }
 header h1 {
   font-size: 50px;
+  text-align: center;
   margin: 10px 0 7px;
 }
-header p {
+#jobInformation {
   font-size: 15px;
-  margin-bottom: 10px;
+  margin: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: rgb(242, 247, 241);
 }
 
 main {
@@ -29,12 +33,12 @@ main h3 {
   margin-bottom: 10px;
 }
 aside {
-  width: 55%;
+  width: 65%;
   display: inline-block;
   align-items: right;
   display: flex;
   flex-direction: column;
-  padding: 30px 30px 60px 30px;
+  padding: 0px 20px 20px 30px;
 
   background-color: #dae6e6;
   border-left: 1px solid rgba(000, 000, 000, 0.4);
@@ -49,7 +53,7 @@ aside ul {
   margin-top: 5px;
 }
 section {
-  width: 45%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -62,30 +66,42 @@ nav {
   background-color: #dcdce9;
 }
 
-div img {
-  width: 40px;
+#conteiner-img {
+  width: 50px;
   display: flex;
   flex-direction: column;
-  margin-top: 14px;
+  margin-bottom: 5px;
 }
-div p {
-  margin: 30px 10px 33px 5px;
+#conteiner-img,
+img {
+  margin-bottom: 5px;
+}
+#conteiner-contatos {
+  margin-bottom: 5px;
+}
+#conteiner-contatos p {
+  margin: 20px 10px 33px 10px;
 }
 article {
-  padding: 20px;
+  padding: 5px;
 }
 article h3 {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 @media print {
-  main,
-  header {
+  main {
     display: flex;
-
+    flex-direction: row;
     max-width: 100%;
-
+    margin-left: 10px;
     background-color: #fff; /* Cor de fundo branca */
     color: #000; /* Cor do texto preta */
   }
+  /* header h1 {
+  font-size: 50px;
+  text-align: center;
+  margin: 10px 0 7px;
+  
+} */
 }
