@@ -18,7 +18,6 @@ header h1 {
 header p {
   font-size: 15px;
   margin-bottom: 10px;
-
 }
 
 main {
@@ -77,4 +76,16 @@ article {
 }
 article h3 {
   margin-bottom: 40px;
+}
+
+@media print {
+  main,
+  header {
+    display: flex;
+
+    max-width: 100%;
+
+    background-color: #fff; /* Cor de fundo branca */
+    color: #000; /* Cor do texto preta */
+  }
 }
